@@ -10,10 +10,38 @@ public class table {
         //初始化表格
         initTableBody();
     }
-   private  boolean validateTable(){
+
+    public String[][] Filter() {
+
+        return tableBody;
+        //return tableBody;
+    }
+    public boolean Delete(){
+
+        return true;
+    }
+    public  boolean IsExist(){
+
+        return true;
+    }
+    public  boolean AddRow(){
+
+        return true;
+    }
+    public  boolean AddColumn(){
+        return  true;
+    }
+    public  boolean DeleteRow(){
+
+        return  true;
+    }
+    public  boolean DeleteColumn(){
+        return  true;
+    }
+
+    private  boolean validateTable(){
       return  this.tableHead.length == this.row;
    }
-
     private void initTableBody(){
         this.row = this.tableHead.length;
         tableBody = new String[this.row][this.column];
